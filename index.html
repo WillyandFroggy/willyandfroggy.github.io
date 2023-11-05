@@ -11,8 +11,112 @@
     <link rel="apple-touch-icon" href="./images/favicon-180.png">
   </head>
   <body>
+    <header id="header">
+        <div class="logo">W + F</div>
+        <input type="checkbox" class="menu-button" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+          <div class="spinner diagonal part-1"></div>
+          <div class="spinner horizontal"></div>
+          <div class="spinner diagonal part-2"></div>
+        </label>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Comics</a></li>
+                <li><a href="#">Artist Statement</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-      <h2>New site coming soon</h2>  
+      <div class="banner" style="background-color: aqua;">
+        <section class="grid-2-container">
+            <div class="left-grid-2">
+              <img src="" width=400px height=400px alt="Selected Image">
+            </div>
+            <div class="right-grid-2">
+              <h2>The Theft of the Rare Blue Seaweed</h2>
+              <button class="ad-btn-1 button button--secondary">
+                <a href="{{ section.settings.ad-btn-1-link }}">Print</a>
+              </button>
+              <button class="ad-btn-2 button button--secondary">
+                <a href="{{ section.settings.ad-btn-2-link }}">Digital</a>
+              </button>
+            </div>
+          </section>
+        </div>
+        <div class="banner" style="background-color: blue;">
+          <section class="grid-2-container">
+              <div class="t-shirt-info left-grid-2">
+                <h2>Rare Blue T-Shirt</h2>
+                <button class="ad-btn-1 button button--secondary">
+                  <a href="{{ section.settings.ad-btn-1-link }}">Print</a>
+                </button>
+                <button class="ad-btn-2 button button--secondary">
+                  <a href="{{ section.settings.ad-btn-2-link }}">Digital</a>
+                </button>
+              </div>
+              <div class="right-grid-2">
+                <img src="" width=400px height=400px alt="Selected Image">
+              </div>
+            </section>
+          </div>
+          <div class="banner" style="background-color: green;">
+            <section class="grid-2-container">
+                <div class="t-shirt-info left-grid-2"><div class="left-grid-2">
+                  <ul>
+                    <li>Shipping</li>
+                    <li>Contact</li>
+                    <li>item 45</li>
+                    <li>"All content Copyright © 2017-2021 Amari Certkus"</li>
+                  </ul>
+                </div>
+                </div>
+                <div class="right-grid-2">
+                  <img src="" width=400px height=400px alt="Selected Image">
+                </div>
+              </section>
+            </div>
     </main>
+    <footer class="grid-2-container">
+      <div class="left-grid-2">
+        <ul>
+          <li>Shipping</li>
+          <li>Contact</li>
+          <li>item 45</li>
+          <li>"All content Copyright © 2017-2021 Amari Certkus"</li>
+        </ul>
+      </div>
+      <div class="right-grid-2">
+        <ul>
+          <li>Webtoon</li>
+          <li>Instagram</li>
+          <li>Goodreads</li>
+          <li>Online Shop</li>
+          <li>Tip Jar</li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("header").style.top = "0";
+        } else {
+          document.getElementById("header").style.top = "-70px";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+      </script>
+    <script>
+      const menuButton = document.querySelector('.menu-button');
+      const menu = document.querySelector('.menu');
+
+      menuButton.addEventListener('click', () => {
+          menu.classList.toggle('active');
+      });
+    </script>
+<!--
+    <script src="index.js"></script>
+-->
 </body>
 </html>
