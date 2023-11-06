@@ -122,10 +122,13 @@ footer {
 footer ul {
   list-style-type: none;
   padding: 0;
+  text-align: center;
 }
 
 footer li {
   padding: 0.2rem 0;
+  display: inline-block;
+  margin: 0 7px;
 }
 
 footer .left-grid-2, footer .right-grid-2 {
@@ -146,18 +149,52 @@ footer .left-grid-2, footer .right-grid-2 {
   align-self: center;
 }
 
+.banner .grid-text-top {
+  height: 100%;
+  width: 400px;
+}
+
+.grid-text-top ul {
+  list-style: none;
+  padding: 0 15px 0 15px;
+}
+
+.grid-text-top ul li {
+  margin-top: .3rem;
+}
+
 .banner img {
   display: block;
 }
 
-.banner button {
-  display: block;
-  margin: 25px auto;
-  width: 275px;
+.banner h2 {
+  margin: 25px 0;
 }
 
-.banner button a {
+.banner .button {
+  margin: 0 auto 25px auto;
+  width: 275px;
   text-decoration: none;
+  display: inline-block;
+  line-height: 36px;
+  font-size: 16px;
+  vertical-align: middle;
+  outline: 0;
+  cursor: pointer;
+  text-align: center;
+  border: 0;
+  padding: 7px 16px;
+  min-height: 36px;
+  min-width: 36px;
+  color: #ffffff;
+  background: #008060;
+  border-radius: 4px;
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset;
+}
+
+.banner .button:hover {
+  background: #006e52;
 }
 
 /* End of home page */
@@ -278,6 +315,11 @@ footer .left-grid-2, footer .right-grid-2 {
     transition: transform 250ms ease-in-out;
   }
 
+  .menu ul li {
+      display: block;
+      margin: 25px;
+  }
+
   main {
     margin-top: 70px;
   }
@@ -293,6 +335,11 @@ footer .left-grid-2, footer .right-grid-2 {
       "right-grid-2";
     width: auto;
     margin: 0 auto;
+  }
+
+  footer li {
+    padding: 0.3rem 0;
+    display: block;
   }
 
 }
