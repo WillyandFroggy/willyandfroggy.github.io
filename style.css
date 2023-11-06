@@ -332,7 +332,8 @@ footer .left-grid-2, footer .right-grid-2 {
 
   .menu ul li {
       display: block;
-      margin: 25px;
+      margin: 25px 0;
+      text-align: center;
   }
 
   main {
@@ -350,6 +351,12 @@ footer .left-grid-2, footer .right-grid-2 {
       "right-grid-2";
     width: auto;
     margin: 0 auto;
+  }
+
+  .reverse-on-mobile {
+    grid-template-areas:
+      "right-grid-2"
+      "left-grid-2";
   }
 
   footer li {
