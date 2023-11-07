@@ -11,54 +11,54 @@ a {
 }
 
 /* Header */
-  header {
-      color: #333;
-      padding: 10px 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1100px;
-      margin: 0 auto;
-  }
-  .logo {
-      margin-left: 20px;
-      font-size: 24px;
-  }
-  .logo a {
-    letter-spacing: 0.6px;
+header {
+    color: #333;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.logo {
+    margin-left: 20px;
+    font-size: 24px;
+}
+.logo a {
+  letter-spacing: 0.6px;
+  text-decoration: none;
+}
+.logo a:hover {
+  color: rgba(18,18,18,1)
+}
+.menu {
+    margin-right: 20px;
+}
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+.menu ul li:last-child {
+    margin-right: 0;
+}
+.menu a {
     text-decoration: none;
-  }
-  .logo a:hover {
-    color: rgba(18,18,18,1)
-  }
-  .menu {
-      margin-right: 20px;
-  }
-  .menu ul {
-      list-style: none;
-      padding: 0;
-  }
-  .menu ul li {
-      display: inline;
-      margin-right: 20px;
-  }
-  .menu ul li:last-child {
-      margin-right: 0;
-  }
-  .menu a {
-      text-decoration: none;
-      color: rgba(18,18,18,0.85);
-      transition: color text-decoration 800ms ease;
-  }
-  .menu a:hover {
-    color: rgba(18,18,18,1);
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    text-decoration-thickness: 2px;
-  }
-  .menu-button {
-    display: none;
-  }
+    color: rgba(18,18,18,0.85);
+    transition: all 800ms ease;
+}
+.menu a:hover {
+  color: rgba(18,18,18,1);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+}
+.menu-button {
+  display: none;
+}
 /* End of header section */
 
 
@@ -80,14 +80,14 @@ a {
 
 .left-grid-2 {
   grid-area: left-grid-2;
-  background-color: red;
-  max-width: 400px;
+  background-color: navy;
+  max-width: 500px;
 }
 
 .right-grid-2 {
   grid-area: right-grid-2;
-  background-color: red;
-  max-width: 400px;
+  background-color: navy;
+  max-width: 500px;
 }
 
 .grid-3-container {
@@ -134,6 +134,21 @@ footer {
   font-size: 0.95rem;
 }
 
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: rgba(18,18,18,1);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+.menu-button {
+  display: none;
+}
+
 footer ul {
   list-style-type: none;
   padding: 0;
@@ -152,7 +167,6 @@ footer .left-grid-2, footer .right-grid-2 {
   align-self: center;
 }
 
-
 /* End of footer section */
 
 
@@ -162,6 +176,7 @@ footer .left-grid-2, footer .right-grid-2 {
   text-align: center;
   justify-self: center;
   align-self: center;
+  color: rgba(255,255,255,0.9);
 }
 
 .banner .grid-text-top {
@@ -184,9 +199,42 @@ footer .left-grid-2, footer .right-grid-2 {
 
 .banner h2 {
   margin: 25px 0;
+  max-width: 425px;
+  margin: 25px auto;
 }
 
-.banner .button {
+.banner p {
+  margin-bottom: 25px;
+  max-width: 400px;
+}
+.menu a {
+  text-decoration: none;
+  color: rgba(18,18,18,0.85);
+  transition: all 800ms ease;
+}
+.menu a:hover {
+color: rgba(18,18,18,1);
+text-decoration: underline;
+text-underline-offset: 3px;
+text-decoration-thickness: 2px;
+}
+
+.banner a {
+  color: rgba(255,255,255,0.9);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: all 800ms ease;
+}
+
+.banner a:hover {
+  color: rgba(255,255,255,1);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+}
+
+.banner a.button {
   margin: 0 auto 25px auto;
   width: 275px;
   text-decoration: none;
@@ -208,12 +256,17 @@ footer .left-grid-2, footer .right-grid-2 {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset;
 }
 
-.banner .button:hover {
+.banner a.button:hover {
   background: #006e52;
 }
 
 /* End of home page */
 
+/* Comics page */
+.grid-text-top a {
+  text-decoration: none;
+}
+/* End of comics page */
 
 @media screen and (max-width: 990px) {
 
