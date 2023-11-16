@@ -179,6 +179,49 @@ text-decoration-thickness: 2px;
   text-align: center;
 }
 
+.buy-prints {
+  background-color: crimson;
+  position: relative;
+}
+
+.buy-prints a.ad-link {
+  background-color: rgba(23, 172, 152, 0.75);
+  color: rgba(255,255,255,0.9);
+  display: block;
+  width: 800px;
+  position: absolute;
+  text-align: center;
+  overflow: hidden;
+  height: 110px;
+  line-height: 110px;
+  width: 880px;
+  position: absolute;
+  transform-origin: top left;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  transition: all 500ms ease;
+}
+
+.buy-prints a.ad-link:hover {
+  background-color: rgba(23,172,152,1);
+  color: rgba(255,255,255,1)
+}
+
+.print-ad-link {
+  bottom: -110px;
+  top: 880px;
+  transform: rotate(-90deg);
+}
+
+.tip-jar-link {
+  bottom: -110px;
+  top: 0;
+  left: 110px;
+  transform: rotate(90deg);
+}
+
 /* End of main page */
 
 
