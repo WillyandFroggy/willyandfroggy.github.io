@@ -216,7 +216,7 @@ text-decoration-thickness: 2px;
 
 footer {
   padding: 25px 0 45px 0;
-  color: rgba(18,18,18,0.85);
+  color: rgba(18,18,18,0.75);
   font-size: 0.95rem;
 }
 
@@ -328,6 +328,11 @@ footer .left-grid-2, footer .right-grid-2 {
 }
 
 /* End of comics page */
+
+
+.hidden {
+  visibility: hidden;
+}
 
 @media screen and (max-width: 1200px) {
 
