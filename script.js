@@ -70,7 +70,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-  // Hide unneeded arrows
   if(window.location.href.includes("index")) {
     rightArrows.forEach(arrow => {
       arrow.classList.add("hidden");
