@@ -168,20 +168,19 @@ text-decoration-thickness: 2px;
 }
 
 .buy-prints {
-  background-color: crimson;
   position: relative;
 }
 
 .buy-prints a.ad-link {
-  background-color: rgba(23, 172, 152, 0.75);
-  color: rgba(255,255,255,0.9);
+  color: rgba(18,18,18,0.75);
+  border: rgba(18,18,18,0.75) 5px solid;
+  box-sizing: border-box;
   display: block;
-  width: 800px;
   text-align: center;
   overflow: hidden;
-  height: 110px;
+  height: 120px;
   line-height: 110px;
-  width: 880px;
+  width: 840px;
   position: absolute;
   transform-origin: top left;
   text-decoration: none;
@@ -192,19 +191,20 @@ text-decoration-thickness: 2px;
 }
 
 .buy-prints a.ad-link:hover {
-  background-color: rgba(23,172,152,1);
-  color: rgba(255,255,255,1)
+  background-color: rgba(191,48,63,0.85);
+  color: rgba(255,255,255,1);
+  border-color: rgba(191,48,63,1);
 }
 
 .print-ad-link {
   bottom: -110px;
-  top: 880px;
+  top: 860px;
   transform: rotate(-90deg);
 }
 
 .tip-jar-link {
   bottom: -110px;
-  top: 0;
+  top: 20px;
   left: 110px;
   transform: rotate(90deg);
 }
@@ -522,16 +522,17 @@ footer .left-grid-2, footer .right-grid-2 {
     display: block;
   }
 
+  .right-ad {
+    background-position: 0px -350px;
+  }
+
   .buy-prints a.ad-link {
-    background-color: rgba(23, 172, 152, 0.75);
-    color: rgba(255,255,255,0.9);
-    display: block;
-    text-align: center;
-    overflow: hidden;
-    height: 100px;
+    height: 110px;
     line-height: 100px;
-    width: auto;
+    width: 96%;
+    max-width: 840px;
     position: relative;
+    margin: 0 auto;
     font-size: 30px;
     letter-spacing: 5px;
   }
@@ -541,13 +542,16 @@ footer .left-grid-2, footer .right-grid-2 {
     top: 0;
     transform: rotate(0deg);
   }
+
+  .right-ad {
+    margin-top: 20px;
+  }
   
   .tip-jar-link {
     bottom: 0;
     top: 0;
     left: 0;
     transform: rotate(0deg);
-    margin-top: 16px;
   }
 
   footer li {

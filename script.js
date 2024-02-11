@@ -46,7 +46,7 @@
     }
     if (tipJarLink) {
       tipJarLink.innerHTML = "TIP THE ARTIST";
-      tipJarLink.href = "#TEST2";
+      tipJarLink.href = "https://willyandfroggy.myshopify.com/products/tip-jar";
     }
 
     if(nextArrow) {
