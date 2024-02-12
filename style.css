@@ -2,81 +2,69 @@ body {
   font-family: Inter, sans-serif;
   margin: 0;
   padding: 0;
-  color: rgba(18,18,18,0.75);
+  color: rgba(18, 18, 18, 0.75);
   letter-spacing: 0.6px;
 }
 
 a {
-  color: rgba(18,18,18,0.75);
+  color: rgba(18, 18, 18, 0.75);
 }
 
 /* Header */
 header {
-    color: #333;
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    margin: 0 auto;
+  color: rgb(18, 18, 18);
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
 }
+
 .logo {
-    margin-left: 20px;
-    font-size: 24px;
+  margin-left: 20px;
+  font-size: 24px;
 }
 .logo a {
   letter-spacing: 0.6px;
   text-decoration: none;
 }
 .logo a:hover {
-  color: rgba(18,18,18,1)
+  color: rgb(18, 18, 18);
 }
+
 .menu {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 .menu ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 .menu ul li {
-    display: inline;
-    margin-right: 20px;
+  display: inline;
+  margin-right: 20px;
 }
 .menu ul li:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 .menu a {
-    text-decoration: none;
-    color: rgba(18,18,18,0.85);
-    transition: all 800ms ease;
+  text-decoration: none;
+  color: rgba(18, 18, 18, 0.85);
+  transition: all 800ms ease;
 }
 .menu a:hover {
-  color: rgba(18,18,18,1);
+  color: rgb(18, 18, 18);
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 2px;
 }
 
-.menu a {
-  text-decoration: none;
-  color: rgba(18,18,18,0.85);
-  transition: all 800ms ease;
-}
-.menu a:hover {
-color: rgba(18,18,18,1);
-text-decoration: underline;
-text-underline-offset: 3px;
-text-decoration-thickness: 2px;
-}
-
 .menu-button {
   display: none;
 }
+
 /* End of header section */
-
-
 /* Grid */
-
 .grid-2-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -85,8 +73,7 @@ text-decoration-thickness: 2px;
   grid-auto-rows: auto auto;
   gap: 0px 0px;
   grid-auto-flow: column dense;
-  grid-template-areas:
-    "left-grid-2 right-grid-2";
+  grid-template-areas: "left-grid-2 right-grid-2";
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -109,23 +96,19 @@ text-decoration-thickness: 2px;
   grid-auto-rows: auto auto auto;
   gap: 0px 0px 0px;
   grid-auto-flow: column dense;
-  grid-template-areas:
-    "left-ad center-comic right-ad";
+  grid-template-areas: "left-ad center-comic right-ad";
   max-width: 1100px;
   margin: 0 auto;
 }
 
 /* End of grid */
-
 /* Main page */
-
 .center-comic img {
   height: 880px;
   width: 880px;
 }
-
 .center-comic a {
-  color: rgba(18,18,18,0.85);
+  color: rgba(18, 18, 18, 0.85);
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
@@ -133,11 +116,6 @@ text-decoration-thickness: 2px;
   display: block;
   margin: 0 10px;
   text-align: right;
-}
-
-.comic-links {
-  width: 400px;
-  margin: 0 auto;
 }
 
 .center-comic a:first-child {
@@ -157,29 +135,30 @@ text-decoration-thickness: 2px;
 }
 
 .center-comic a:hover {
-  color: rgba(18,18,18,1);
+  color: rgb(18, 18, 18);
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 2px;
 }
 
 .comic-links {
+  width: 400px;
+  margin: 0 auto;
   text-align: center;
 }
 
 .buy-prints {
   position: relative;
 }
-
 .buy-prints a.ad-link {
-  color: rgba(18,18,18,0.75);
-  border: rgba(18,18,18,0.75) 5px solid;
+  background-color: rgba(191, 48, 63, 0.85);
+  color: rgb(255, 255, 255);
   box-sizing: border-box;
   display: block;
   text-align: center;
   overflow: hidden;
   height: 120px;
-  line-height: 110px;
+  line-height: 120px;
   width: 840px;
   position: absolute;
   transform-origin: top left;
@@ -189,11 +168,9 @@ text-decoration-thickness: 2px;
   letter-spacing: 5px;
   transition: all 500ms ease;
 }
-
 .buy-prints a.ad-link:hover {
-  background-color: rgba(191,48,63,0.85);
-  color: rgba(255,255,255,1);
-  border-color: rgba(191,48,63,1);
+  background-color: rgb(191, 48, 63);
+  color: rgb(255, 255, 255);
 }
 
 .print-ad-link {
@@ -210,256 +187,219 @@ text-decoration-thickness: 2px;
 }
 
 /* End of main page */
-
-
 /* Footer section */
-
 footer {
   padding: 25px 0 45px 0;
-  color: rgba(18,18,18,0.75);
+  color: rgba(18, 18, 18, 0.75);
   font-size: 0.95rem;
 }
-
 footer a {
   text-decoration: none;
 }
-
 footer a:hover {
-  color: rgba(18,18,18,1);
+  color: rgb(18, 18, 18);
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+footer li {
+  padding: 0.2rem 0;
+  display: inline-block;
+  margin: 0 7px;
+}
+footer .left-grid-2, footer footer .right-grid-2 {
+  text-align: center;
+  justify-self: center;
+  align-self: center;
 }
 
 .menu-button {
   display: none;
 }
 
-footer ul {
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
-}
-
-footer li {
-  padding: 0.2rem 0;
-  display: inline-block;
-  margin: 0 7px;
-}
-
-footer .left-grid-2, footer .right-grid-2 {
-  text-align: center;
-  justify-self: center;
-  align-self: center;
-}
-
 /* End of footer section */
-
-/* Index page */
-
-
-
-/* End of index page */
-
 /* Comics page */
-
 .banner .left-grid-2, .banner .right-grid-2 {
   text-align: center;
   justify-self: center;
   align-self: center;
 }
-
+.banner.bright-red {
+  background-color: rgb(191, 48, 63);
+}
+.banner.rare-blue {
+  background-color: #2554a5;
+}
 .banner img {
   display: block;
   width: 400px;
   height: auto;
 }
-
 .banner h2 {
   max-width: 400px;
   margin: 25px auto;
-  color: white;
+  color: rgb(255, 255, 255);
   line-height: 1.3;
 }
-
 .banner p {
   margin-bottom: 25px;
   max-width: 350px;
   padding: 0 25px;
-  color: white;
+  color: rgb(255, 255, 255);
   line-height: 1.3;
 }
-
 .banner a {
-  color: rgba(255,255,255,0.9);
+  color: rgba(255, 255, 255, 0.9);
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
   transition: all 500ms ease;
 }
-
 .banner a:last-child {
   margin-bottom: 25px;
 }
-
 .banner a:hover {
-  color: rgba(255,255,255,1);
+  color: rgb(255, 255, 255);
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 2px;
 }
-
 .banner ul {
   list-style: none;
   padding: 0 15px 0 15px;
   margin-bottom: 25px;
 }
-
 .banner ul li {
   margin-bottom: 0.5rem;
 }
-
 .banner ul li:last-child {
   margin-bottom: 0rem;
 }
 
-.banner a {
-  text-decoration: underline;
-}
-
 /* End of comics page */
-
 /* Archive page */
-
 .archive {
   text-align: center;
 }
-
 .archive ul {
   list-style-type: none;
   padding: 0;
 }
-
 .archive ul li {
   margin-bottom: 0.5rem;
 }
-
 .archive a {
   text-decoration: none;
 }
-
 .archive a:hover {
-  color: rgba(18,18,18,1);
+  color: rgb(18, 18, 18);
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
 }
 
 /* End of archive page */
-
 .hidden {
   visibility: hidden;
 }
 
 @media screen and (max-width: 1200px) {
-
   /* Responsive menu */
-
   header {
-    background-color: #333;
+    background-color: rgb(18, 18, 18);
     position: fixed;
     top: 0;
     width: 100%;
     display: block;
     transition: top 0.3s;
-
     display: block;
     margin: 0 auto;
     width: 100%;
     max-width: 100%;
     box-shadow: none;
-    height: 70px!important;
+    height: 70px !important;
     padding: 0;
     overflow: hidden;
     z-index: 10;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
   }
-
-  input[type="checkbox"]:checked ~ #sidebarMenu {
-      transform: translateX(0);
+  input[type=checkbox]:checked ~ #sidebarMenu {
+    transform: translateX(0);
   }
-
   input[type=checkbox] {
-      transition: all 0.3s;
-      box-sizing: border-box;
-      display: none;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
   }
   .sidebarIconToggle {
-      transition: all 0.3s;
-      box-sizing: border-box;
-      cursor: pointer;
-      position: absolute;
-      z-index: 99;
-      height: 100%;
-      width: 100%;
-      top: 24px;
-      right: 15px;
-      height: 22px;
-      width: 22px;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 24px;
+    right: 15px;
+    height: 22px;
+    width: 22px;
   }
   .spinner {
-      transition: all 0.3s;
-      box-sizing: border-box;
-      position: absolute;
-      height: 2px;
-      width: 100%;
-      background-color: #333;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(18, 18, 18);
   }
   .horizontal {
-      transition: all 0.3s;
-      box-sizing: border-box;
-      position: relative;
-      float: left;
-      margin-top: 5px;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 5px;
   }
   .diagonal.part-1 {
-      position: relative;
-      transition: all 0.3s;
-      box-sizing: border-box;
-      float: left;
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
   }
   .diagonal.part-2 {
-      transition: all 0.3s;
-      box-sizing: border-box;
-      position: relative;
-      float: left;
-      margin-top: 5px;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 5px;
   }
   input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
-      transition: all 0.3s;
-      box-sizing: border-box;
-      opacity: 0;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
   }
   input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
-      transition: all 0.3s;
-      box-sizing: border-box;
-      transform: rotate(135deg);
-      margin-top: 8px;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
   }
   input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
-      transition: all 0.3s;
-      box-sizing: border-box;
-      transform: rotate(-135deg);
-      margin-top: -9px;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
   }
-
   .logo {
     position: fixed;
     width: 100%;
     text-align: center;
     margin-top: 20px;
   }
-
   .menu {
     margin: 0;
     height: 100%;
@@ -468,52 +408,41 @@ footer .left-grid-2, footer .right-grid-2 {
     width: 250px;
     margin-top: 70px;
     transition: transform 250ms ease-in-out;
-    background: #fff;
+    background: rgb(255, 255, 255);
   }
-
   .menu.active {
     transform: translateX(-250px);
     transition: transform 250ms ease-in-out;
   }
-
   .menu ul li {
-      display: block;
-      margin: 25px 0;
-      text-align: center;
+    display: block;
+    margin: 25px 0;
+    text-align: center;
   }
-
   main {
     margin-top: 70px;
   }
   /* End of responsive menu */
-
   .grid-2-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     grid-auto-columns: 1fr;
     grid-auto-rows: auto auto;
-    grid-template-areas:
-      "left-grid-2"
-      "right-grid-2";
+    grid-template-areas: "left-grid-2" "right-grid-2";
     width: auto;
     margin: 0 auto;
     padding: 20px 0 30px 0;
   }
-
   .grid-3-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     grid-auto-columns: 1fr;
     grid-auto-rows: auto auto;
-    grid-template-areas:
-      "left-ad"
-      "center-comic"
-      "right-ad";
+    grid-template-areas: "left-ad" "center-comic" "right-ad";
     width: auto;
     margin: 0 auto;
     padding: 20px 0 30px 0;
   }
-
   .center-comic img {
     width: 100%;
     height: auto;
@@ -521,14 +450,12 @@ footer .left-grid-2, footer .right-grid-2 {
     margin: 0 auto;
     display: block;
   }
-
   .right-ad {
     background-position: 0px -350px;
   }
-
   .buy-prints a.ad-link {
     height: 110px;
-    line-height: 100px;
+    line-height: 110px;
     width: 96%;
     max-width: 840px;
     position: relative;
@@ -536,35 +463,28 @@ footer .left-grid-2, footer .right-grid-2 {
     font-size: 30px;
     letter-spacing: 5px;
   }
-
   .print-ad-link {
     bottom: 0;
     top: 0;
     transform: rotate(0deg);
   }
-
   .right-ad {
-    margin-top: 20px;
+    margin-top: 18px;
   }
-  
   .tip-jar-link {
     bottom: 0;
     top: 0;
     left: 0;
     transform: rotate(0deg);
   }
-
   footer li {
     padding: 0.3rem 0;
     display: block;
   }
-
   footer ul:first-child {
     margin-top: 0;
   }
-
   footer {
     padding-bottom: 65px;
   }
-
 }
