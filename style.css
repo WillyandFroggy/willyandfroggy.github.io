@@ -1,12 +1,25 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #2554a5;
-  }
-  
-  main {
-    margin: 150px auto;
-    color: white;
-    text-align: center;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(191, 48, 69);
+}
+
+main {
+  margin: 150px auto;
+  color: white;
+  text-align: center;
+}
+
+img {
+  width: 250px;
+}
+
+h2 {
+  margin: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
